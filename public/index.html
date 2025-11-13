@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Login</title>
+    <link rel="stylesheet" href="css/boot.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <div id="login-container">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-senha">Senha:</label>
+                    <input type="password" id="login-senha" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+                <p id="login-error" class="error-message"></p>
+                <p class="toggle-link">Não tem conta? <a href="#" id="show-register">Registre-se</a></p>
+            </form>
+        </div>
+
+        <div id="register-container" class="hidden">
+            <h1>Registro</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-nome">Nome:</label>
+                    <input type="text" id="register-nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-senha">Senha:</label>
+                    <input type="password" id="register-senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-perfil">Eu sou:</label>
+                    <select id="register-perfil" required>
+                        <option value="leitor">Leitor</option>
+                        <option value="bibliotecario">Bibliotecário</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Registrar</button>
+                <p id="register-error" class="error-message"></p>
+                <p class="toggle-link">Já tem conta? <a href="#" id="show-login">Faça login</a></p>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
