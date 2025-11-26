@@ -17,21 +17,15 @@ hr {
     max-width: 450px;
     margin: 5vh auto;
     padding: 2rem;
-    background: #e8e3dd;
-    border-radius: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    margin: 0;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+    background: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 
 header {
-    background-color: #000000;
-    color: white;
+    background-color: #fff7ee;
+    color: black;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -58,7 +52,7 @@ section {
 }
 
 h1, h2, h3 {
-    color: #000000;
+    color: #080808;
 }
 
 h1 { text-align: center; margin-bottom: 1.5rem; }
@@ -70,15 +64,9 @@ h2 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; margin-top: 0; }
 }
 
 .form-group label {
-   display: block;
+    display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-
-    transform: translateX(-35px);
 }
 
 input[type="text"],
@@ -86,13 +74,11 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 select {
-   width: 80%;            
-    display: block;       
-    margin: 0 auto;        
-    padding:  0.65rem;     
+    width: 100%;
+    padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 
@@ -100,7 +86,7 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    align-items: flex-end;
+    align-items: flex-end; 
 }
 
 #book-form .form-group {
@@ -134,34 +120,22 @@ select {
 }
 
 .btn-primary {
-    background-color: #0069d9;
+    background-color: #2C5D37;
     color: white;
 }
-.btn-primary:hover { background-color: #125dae; }
+.btn-primary:hover { background-color: rgb(33, 109, 66);}
 
 .btn-secondary {
-    background-color: #6c757d;
+    background-color: #820808;
     color: white;
 }
-.btn-secondary:hover { background-color: #5a6268; }
-
-.btn-success {
-    background-color: #0069d9;
-    color: white;
-}
-.btn-success:hover { background-color: #125dae; }
-
-.btn-danger {
-    background-color: #dc3545;
-    color: white;
-}
-.btn-danger:hover { background-color: #c82333; }
+.btn-secondary:hover { background-color: #8a2121; }
 
 .btn-warning {
-    background-color: #0069d9;
+    background-color: #2C5D37;
     color: white;
 }
-.btn-warning:hover { background-color: #125dae;}
+.btn-warning:hover { background-color:  rgb(33, 109, 66);}
 
 
 .btn-action {
@@ -172,11 +146,8 @@ select {
 
 
 form .btn {
-    width: 60%;       
-    display: block;    
-    margin: 1rem auto;
+    width: 100%;
 }
-
 
 
 table {
@@ -192,7 +163,7 @@ th, td {
 }
 
 th {
-    background-color: #f8f8f8;
+    background-color: #fff7ee;
     color: #333;
 }
 
@@ -203,7 +174,6 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #f1f1f1;
 }
-
 
 
 .hidden {
@@ -222,7 +192,6 @@ tbody tr:hover {
     margin-top: 1rem;
 }
 .toggle-link a {
-    color: #007bff;
     cursor: pointer;
     text-decoration: none;
 }
